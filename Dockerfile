@@ -7,7 +7,7 @@ ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update \
-  && apt-get -y install build-essential nginx sqlite3 \
+  && apt-get -y install build-essential libpcre3 libpcre3-dev python3-dev nginx sqlite3 \
   && apt-get -y autoremove \
   && apt-get -y clean
 
