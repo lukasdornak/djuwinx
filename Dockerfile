@@ -14,7 +14,7 @@ RUN apk update; \
 		linux-headers \
 		pcre \
 		pcre-dev; \
-	pip3 install uwsgi Django==2.1.0; \
+	pip3 install uwsgi Django==2.1.5; \
 	apk del .build-deps;
 
 RUN mkdir -p /var/log/uwsgi/ \
